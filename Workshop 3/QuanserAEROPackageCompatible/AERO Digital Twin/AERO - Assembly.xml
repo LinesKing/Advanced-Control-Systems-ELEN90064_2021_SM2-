@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="garciar1" on="01/21/21||14:32:59" using="Simscape Multibody Link Version 7.2" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="AERO - Assembly.iam" uid="AERO - Assembly.iam_{B0C7403E-46A1-B716-A4EA-D193A3060385}" version="{D1B4B6C2-44A7-A44B-81F8-F1F955F44DD5}">
+<AssemblyFile name="AERO - Assembly.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="AERO - Base:1" uid="AERO - Base:1" entityUid="AERO - Base.ipt_{5B170AF7-4835-771C-6ADF-04BDBD784493}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.4213836346086724 -5.1619496793960629 8.8817841970012523e-16</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Fork:1" uid="AERO - Fork:1" entityUid="AERO - Fork.ipt_{19DEB560-4DA8-F02E-E9C0-369FCF880C44}">
+<Transform>
+<Rotation>-8.2551928530950456e-13 1.2246467991147341e-16 -1 0 1 1.2246467991142287e-16 1 0 -8.2551928530950456e-13</Rotation>
+<Translation>-0.42138363460867245 4.8380503206039371 8.2694607976110666e-16</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Arm:1" uid="AERO - Arm:1" entityUid="AERO - Arm.ipt_{15B1D815-460D-A329-2F9F-5FB9E93ED37B}">
+<Transform>
+<Rotation>1 -1.4912658519625445e-11 -8.2558051764946285e-13 1.4912658519625445e-11 1 0 8.2558051764946194e-13 0 1</Rotation>
+<Translation>-0.42138363460887501 28.838050320603937 0.24999999999999939</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Propeller Housing:1" uid="AERO - Propeller Housing:1" entityUid="AERO - Propeller Housing.ipt_{180F9119-4C93-59E3-A88D-3BA97F46F3C3}">
+<Transform>
+<Rotation>1.6352481345435431e-14 -1.4935542325340181e-11 1.0000000000000002 0.054182971068660685 0.99853102387766246 1.4912716344266452e-11 -0.99853102387766246 0.054182971068660685 8.2558051764946214e-13</Rotation>
+<Translation>14.429987402899348 27.839519296947749 0.19581702894359754</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Propeller Housing:2" uid="AERO - Propeller Housing:2" entityUid="AERO - Propeller Housing.ipt_{180F9119-4C93-59E3-A88D-3BA97F46F3C3}">
+<Transform>
+<Rotation>-1.6359107099641257e-14 -1.4935420220191377e-11 -1.0000000000000002 -0.054182971068567863 0.99853102387766746 -1.4912594059484227e-11 0.99853102387766746 0.054182971068567863 -8.2558051764946214e-13</Rotation>
+<Translation>-15.272754672087229 27.839519296504793 0.1958170289191728</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Propeller:1" uid="AERO - Propeller:1" entityUid="AERO - Propeller.ipt_{54ECD9B7-47A0-F6BB-CE8E-F5BB4731363E}">
+<Transform>
+<Rotation>0.58778608405508004 -1.4935447133356831e-11 0.80901639006338733 0.043834911665642746 0.99853102387766246 -0.031847996374852472 -0.80782796430332859 0.054182971068660657 0.58692264033321551</Rotation>
+<Translation>14.429987402891879 28.338784808886579 0.22290851447792745</Translation>
+</Transform>
+</Instance>
+<Instance name="AERO - Propeller:2" uid="AERO - Propeller:2" entityUid="AERO - Propeller.ipt_{54ECD9B7-47A0-F6BB-CE8E-F5BB4731363E}">
+<Transform>
+<Rotation>0.95105671274834003 -1.4935344488434677e-11 0.30901638975355555 0.016743426119913696 0.99853102387766735 -0.051531078346802102 -0.30856245205482852 0.054182971068567891 0.94965963314657853</Rotation>
+<Translation>-15.272754672094697 28.338784808443631 0.22290851445345761</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="Rotational:1">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Base:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>3.0982968129074132e-16 1 0 0 0 1 1 -3.0982968129074132e-16 0</Rotation>
+<Translation>0 9 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Fork:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 1.8369701987210304e-16 1 0 -1 1.8369701987210304e-16</Rotation>
+<Translation>0 -1.0000000000000002 -1.8369701987210304e-16</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:2">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Fork:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 1 1.1102230246251564e-16 1 0 -1 1.1102230246251564e-16 0</Rotation>
+<Translation>7.5 24 -4.4408920985006262e-16</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Arm:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 7.25</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:3">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Arm:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>5.3000000000000007 0 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Propeller Housing:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 -1 0 0 0 -1</Rotation>
+<Translation>-2.6795207310774862e-15 1 -9.5513710374932863</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:4">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Arm:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 1 0 -1 0 1 0 0</Rotation>
+<Translation>-5.3000000000000007 0 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Propeller Housing:2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 -1 0 0 0 -1</Rotation>
+<Translation>-2.6795207310774862e-15 1 -9.5513710374932863</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:5">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Propeller Housing:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 -3.0655411873962379e-16 0 0 0 1 -3.0655411873962379e-16 -1 0</Rotation>
+<Translation>0 0.69999999999999996 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Propeller:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0.80901699437494767 -0.58778525229247314 0 0 0 1 -0.58778525229247314 -0.80901699437494767 0</Rotation>
+<Translation>0 0.20000000000000001 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:6">
+<BaseFrame>
+<InstancePath>
+<Uid>AERO - Propeller Housing:2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 -1.2501024082114323e-16 0 0 0 1 -1.2501024082114323e-16 -1 0</Rotation>
+<Translation>0 0.69999999999999996 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>AERO - Propeller:2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.30901699437494734 0.95105651629515375 0 0 0 1 0.95105651629515375 0.30901699437494734 0</Rotation>
+<Translation>0 0.20000000000000001 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="AERO - Arm.ipt" uid="AERO - Arm.ipt_{15B1D815-460D-A329-2F9F-5FB9E93ED37B}" version="{25181E8D-BDBA-BB66-9015-84D9386C249A}">
+<PartFile name="AERO - Arm.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.26803684677336304</Mass>
+<CenterOfMass>1.4217129600648017e-10 -5.1965980940643157e-11 0</CenterOfMass>
+<Inertia>3.6529210547402911 4.6118513674035562 1.5185502279018392 9.0949470177292826e-16 -7.5851858127862214e-12 0</Inertia>
+</MassProperties>
+<GeometryFile name="AERO - Arm_ipt_54056d2d.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Diffuse r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="AERO - Base.ipt" uid="AERO - Base.ipt_{5B170AF7-4835-771C-6ADF-04BDBD784493}" version="{9227B3A9-103F-6E80-94B2-7A9CA65836B8}">
+<PartFile name="AERO - Base.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>2.3646013590087778</Mass>
+<CenterOfMass>5.2411111737809943e-11 3.7953212977613506 0</CenterOfMass>
+<Inertia>71.877324830007353 118.70338504388218 71.87732467523486 0 0 -5.8082727144378378e-10</Inertia>
+</MassProperties>
+<GeometryFile name="AERO - Base_ipt_b1761deb.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Diffuse r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="AERO - Fork.ipt" uid="AERO - Fork.ipt_{19DEB560-4DA8-F02E-E9C0-369FCF880C44}" version="{FA4DD381-8BFC-F27D-A08A-FFEABF126DE9}">
+<PartFile name="AERO - Fork.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.83305794936159261</Mass>
+<CenterOfMass>2.6616972860311174e-12 9.4887662204331118 1.4765978586370329e-13</CenterOfMass>
+<Inertia>53.031260884967097 52.919396325752551 103.83120541726365 -1.7831956653812282e-12 1.2005330063405927e-12 2.2160395060760429e-11</Inertia>
+</MassProperties>
+<GeometryFile name="AERO - Fork_ipt_cc713931.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Diffuse r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="AERO - Propeller Housing.ipt" uid="AERO - Propeller Housing.ipt_{180F9119-4C93-59E3-A88D-3BA97F46F3C3}" version="{0442C61F-ECD1-52B6-200D-97CB2605C3D4}">
+<PartFile name="AERO - Propeller Housing.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.12383177107043668</Mass>
+<CenterOfMass>0.00017719529705504359 0.54550389866945959 -0.86087796874497935</CenterOfMass>
+<Inertia>3.1070143145161389 4.1171544948269156 1.3860060892702213 0.048449106568248433 -0.0014683986965912995 -1.0036332207252452e-05</Inertia>
+</MassProperties>
+<GeometryFile name="AERO - Propeller Housing_ipt_f68ac60a.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Diffuse r="0.019607843137254902" g="0.019607843137254902" b="0.019607843137254902" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="AERO - Propeller.ipt" uid="AERO - Propeller.ipt_{54ECD9B7-47A0-F6BB-CE8E-F5BB4731363E}" version="{F9154BAD-C804-9EFE-D7E1-632604B17546}">
+<PartFile name="AERO - Propeller.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.020642549722058069</Mass>
+<CenterOfMass>-1.0654070864969648e-13 0.50957557065841852 -2.1081925156778982e-12</CenterOfMass>
+<Inertia>0.13821663896067576 0.2727728691223324 0.1382166389742846 0 0 -9.3993314912803545e-16</Inertia>
+</MassProperties>
+<GeometryFile name="AERO - Propeller_ipt_36a575e7.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.12156862745098039" g="0.12156862745098039" b="0.70588235294117652" a="1"/>
+<Diffuse r="0.12156862745098039" g="0.12156862745098039" b="0.70588235294117652" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.52249999999999996</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
